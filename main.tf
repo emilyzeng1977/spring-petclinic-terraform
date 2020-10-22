@@ -40,6 +40,33 @@ module "elastic_beanstalk_application" {
   description = "Test elastic_beanstalk_application"
 }
 
+  module "elastic_beanstalk_environment" {
+    source                             = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment.git?ref=0.31.0"
+    namespace                          = var.namespace
+    stage                              = var.stage
+    name                               = var.name
+    description                        = "Test elastic_beanstalk_environment"
+    region                             = var.region
+    availability_zone_selector         = "Any 2"
+    dns_zone_id                        = var.dns_zone_id
+    elastic_beanstalk_application_name = module.elastic_beanstalk_application.elastic_beanstalk_application_name
+
+    instance_type           = "t2.small"
+    autoscale_min           = 1
+    autoscale_max           = 2
+    updating_min_in_service = 0
+    updating_max_batch      = 1
+
+    loadbalancer_type       = "application"
+    vpc_id                  = module.vpc.vpc_id
+    loadbalancer_subnets    = module.subnets.public_subnet_ids
+    application_subnets     = module.subnets.private_subnet_ids
+    allowed_security_groups = [module.vpc.vpc_default_security_group_id]
+
+    // https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
+    // https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.docker
+    solution_stack_name = "64bit Amazon Linux 2018.03 v2.12.17 running Docker 18.06.1-ce"
+  }
 
 data "aws_iam_policy_document" "minimal_s3_permissions" {
   statement {
