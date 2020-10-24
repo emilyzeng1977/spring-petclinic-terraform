@@ -26,7 +26,6 @@ autoscale_max = 2
 
 wait_for_ready_timeout = "20m"
 
-
 force_destroy = true
 
 rolling_update_enabled = true
@@ -61,8 +60,6 @@ autoscale_upper_increment = 1
 
 elb_scheme = "public"
 
-// https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
-// https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.docker
 solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.0 running Java 8"
 
 version_label = ""
