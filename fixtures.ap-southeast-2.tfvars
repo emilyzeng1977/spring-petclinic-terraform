@@ -4,9 +4,9 @@ availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
 namespace = "tniu"
 
-stage = "spring"
+stage = "petclinic"
 
-name = "petclinic"
+name = ""
 
 description = "elastic-beanstalk-environment"
 
