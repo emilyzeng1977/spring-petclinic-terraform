@@ -2,13 +2,13 @@ region = "ap-southeast-2"
 
 availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
-namespace = "eg"
+namespace = "tniu"
 
-stage = "test"
+stage = "spring"
 
-name = "elastic-beanstalk-env"
+name = "petclinic"
 
-description = "Test elastic-beanstalk-environment"
+description = "elastic-beanstalk-environment"
 
 tier = "WebServer"
 
@@ -63,8 +63,10 @@ elb_scheme = "public"
 
 // https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
 // https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.docker
-solution_stack_name = "64bit Amazon Linux 2018.03 v2.12.17 running Docker 18.06.1-ce"
+solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.0 running Java 8"
 
 version_label = ""
 
-dns_zone_id = "Z3SO0TKDDQ0RGG"
+dns_zone_id = "Z03490151F9W0LKB1NFT6"
+
+environment = "tniu"

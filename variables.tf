@@ -202,3 +202,7 @@ variable "env_vars" {
   default     = {}
   description = "Map of custom ENV variables to be provided to the application running on Elastic Beanstalk, e.g. env_vars = { DB_USER = 'admin' DB_PASS = 'xxxxxx' }"
 }
+
+variable "environment" {
+  type        = string
+}
