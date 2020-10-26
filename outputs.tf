@@ -103,6 +103,3 @@ output "elastic_beanstalk_environment_triggers" {
   value       = module.elastic_beanstalk_environment.triggers
 }
 
-output "elastic_beanstalk_environment_aws_s3_bucket_elb_logs_name" {
-  value       = module.elastic_beanstalk_environment.label
-}
