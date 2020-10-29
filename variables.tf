@@ -13,6 +13,11 @@ variable "namespace" {
   description = "Namespace, which could be your organization name, e.g. 'eg' or 'cp'"
 }
 
+variable "environment" {
+  type        = string
+  description = "environment, which could be your organization name, e.g. 'eg' or 'cp'"
+}
+
 variable "stage" {
   type        = string
   description = "Stage, e.g. 'prod', 'staging', 'dev', or 'test'"

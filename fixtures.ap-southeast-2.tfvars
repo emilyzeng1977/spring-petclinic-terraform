@@ -4,6 +4,8 @@ availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
 namespace = "eg"
 
+environment = "zyc"
+
 stage = "test"
 
 name = "elastic-beanstalk-env"
