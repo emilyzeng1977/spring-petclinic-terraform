@@ -2,13 +2,14 @@ region = "ap-southeast-2"
 
 availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
-namespace = "eg"
+namespace = "digihealth"
 
+stage = "dev"
 environment = "zyc"
 
 stage = "test"
 
-name = "elastic-beanstalk-env"
+name = "petclinic"
 
 description = "Test elastic-beanstalk-environment"
 
@@ -63,7 +64,3 @@ autoscale_upper_increment = 1
 elb_scheme = "public"
 
 solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.0 running Java 8"
-
-version_label = ""
-
-dns_zone_id = "Z03490151F9W0LKB1NFT6"

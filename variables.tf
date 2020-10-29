@@ -61,11 +61,6 @@ variable "loadbalancer_type" {
   description = "Load Balancer type, e.g. 'application' or 'classic'"
 }
 
-variable "dns_zone_id" {
-  type        = string
-  description = "Route53 parent zone ID. The module will create sub-domain DNS record in the parent zone for the EB environment"
-}
-
 variable "availability_zone_selector" {
   type        = string
   description = "Availability Zone selector"
@@ -99,11 +94,6 @@ variable "wait_for_ready_timeout" {
 variable "tier" {
   type        = string
   description = "Elastic Beanstalk Environment tier, e.g. 'WebServer' or 'Worker'"
-}
-
-variable "version_label" {
-  type        = string
-  description = "Elastic Beanstalk Application version to deploy"
 }
 
 variable "force_destroy" {
@@ -206,4 +196,9 @@ variable "env_vars" {
   type        = map(string)
   default     = {}
   description = "Map of custom ENV variables to be provided to the application running on Elastic Beanstalk, e.g. env_vars = { DB_USER = 'admin' DB_PASS = 'xxxxxx' }"
+}
+
+variable "version_label" {
+   type        = string
+   default     = ""
 }
