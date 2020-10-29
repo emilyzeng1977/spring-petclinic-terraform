@@ -5,6 +5,9 @@ availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 namespace = "digihealth"
 
 stage = "dev"
+environment = "zyc"
+
+stage = "test"
 
 name = "petclinic"
 
