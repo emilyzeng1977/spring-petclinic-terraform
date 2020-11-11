@@ -4,11 +4,11 @@ availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
 namespace = "digihealth"
 
-environment = "petclinic"
+stage = "petclinic"
 
-stage = "dev"
+environment = ""
 
-name = ""
+name = "dev"
 
 description = "Test elastic-beanstalk-environment"
 

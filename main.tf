@@ -33,7 +33,7 @@ module "elastic_beanstalk_application" {
   source      = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application.git?ref=tags/0.7.1"
   namespace   = var.namespace
   stage       = var.stage
-  name        = var.name
+  name        = ""
   attributes  = var.attributes
   tags        = var.tags
   delimiter   = var.delimiter
