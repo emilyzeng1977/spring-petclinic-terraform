@@ -8,7 +8,7 @@ stage = "petclinic"
 
 environment = ""
 
-name = "dev"
+name = "tom.niu19"
 
 description = "Test elastic-beanstalk-environment"
 
