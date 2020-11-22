@@ -62,4 +62,4 @@ autoscale_upper_increment = 1
 
 elb_scheme = "public"
 
-solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.0 running Java 8"
+solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.1 running Java 8"
