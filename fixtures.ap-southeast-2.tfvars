@@ -6,9 +6,9 @@ namespace = "digihealth"
 
 stage = "petclinic"
 
-environment = ""
+environment = "19"
 
-name = "tom.niu19"
+name = "dev"
 
 description = "Test elastic-beanstalk-environment"
 
